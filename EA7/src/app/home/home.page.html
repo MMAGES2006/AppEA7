@@ -33,8 +33,11 @@
         <td>{{ item.date }}</td>
         <td>
           <input type = "checkbox"
-          [checked]= "item.completed" 
+          [checked]= "item.completed"  
           />
+        </td>
+        <td>
+          <button (click) = "removeItem(item.id)">Eliminar</button> 
         </td>
       </tr>
     </tbody>
